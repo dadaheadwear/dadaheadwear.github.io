@@ -266,6 +266,14 @@
   }
   .about p { margin: 0; font-size: 14px; color: var(--ink-2); max-width: 48ch; }
 
+  .about a.site {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
+  }
+  .about a.site:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
   footer {
     border-top: 2px solid var(--accent);
     padding-top: 14px;
@@ -310,11 +318,11 @@
 
 <div class="wrap">
 
-  <p class="eyebrow"><b>CLO Summit New York</b> <span>Sep 25 · Hall 1 · Booth TBC</span></p>
+  <p class="eyebrow"><b>CLO Summit New York</b> <span>Sep 25 · Hall 1</span></p>
 
   <div class="hero">
     <h1>Add a cap to your <em>CLO</em> scene.</h1>
-    <p class="lede">We manufacture headwear, and we build it as CLO assets — panel seams, buckram crowns, visor curvature, stitch and embroidery loft. Take the deck, then tell us which block you want next.</p>
+    <p class="lede">We manufacture headwear, and we build it as CLO assets — panel seams, buckram crowns, visor curvature, stitch and embroidery loft.</p>
   </div>
 
   <div>
@@ -358,12 +366,12 @@
 
   <div class="spec">
     <div class="spec-row">
-      <div class="spec-key">Blocks</div>
+      <div class="spec-key">Shapes</div>
       <p class="spec-val">5-panel · 6-panel · trucker · bucket · camp cap</p>
     </div>
     <div class="spec-row">
       <div class="spec-key">Built in</div>
-      <p class="spec-val">CLO 2026, delivered as .zprj with fabric and colorway sets</p>
+      <p class="spec-val">CLO 2026, with fabric and colorway sets built per style</p>
     </div>
     <div class="spec-row">
       <div class="spec-key">Carries over</div>
@@ -376,8 +384,8 @@
   </div>
 
   <form class="card" id="lead-form" novalidate>
-    <h2>Get the 3D sample deck</h2>
-    <p class="sub">Renders, wireframes and the file breakdown for the blocks above.</p>
+    <h2>Get the 3D sampling overview</h2>
+    <p class="sub">How we build a cap in CLO, style by style, and what comes back to you.</p>
     <div class="fields">
       <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
       <label><span>Company</span><input type="text" name="company" autocomplete="organization" required></label>
@@ -385,25 +393,26 @@
       <label><span>Work email</span><input type="email" name="email" autocomplete="email" required></label>
     </div>
     <button type="submit">Send me the deck</button>
-    <p class="fineprint">We use this to send the deck and follow up once. Nothing else.</p>
+    <p class="fineprint">We use this to send the overview and to follow up about your headwear program. Nothing else.</p>
   </form>
 
   <div class="card done" id="lead-done" hidden>
     <h2>Deck is ready.</h2>
     <a class="dl" href="#" id="dl-link">
       <span>
-        <span class="dl-name">DADA Headwear · 3D Sample Deck</span><br>
-        <span class="dl-meta">PDF · 24 pages</span>
+        <span class="dl-name">DADA Headwear · 3D Sampling Overview</span><br>
+        <span class="dl-meta">PDF</span>
       </span>
       <span class="dl-arrow" aria-hidden="true">↓</span>
     </a>
     <p class="sub">We emailed the same link to you, so it is in your inbox when you get back to your desk.</p>
-    <p class="fineprint">Want a specific block first? Reply to that email and name it.</p>
+    <p class="fineprint">Questions about a style inside? Reply to that email.</p>
   </div>
 
   <div class="about">
     <h3>About DADA</h3>
     <p>A premium headwear manufacturer with production in Bangladesh and the United States, working with brands on OEM and ODM programs.</p>
+    <p><a class="site" href="https://dadacorp.com/?utm_source=clo-summit&amp;utm_medium=booth-qr&amp;utm_campaign=clo-nyc-2026">dadacorp.com</a></p>
   </div>
 
 </div>
