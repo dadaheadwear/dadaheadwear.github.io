@@ -28,6 +28,7 @@
     --accent-ink: #ffffff;
     --line: #e8ded6;
     --line-strong: #d6c8bd;
+    --hint: #a89c94;
     --sans: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   }
@@ -43,6 +44,7 @@
       --accent-ink: #1a1512;
       --line: #332a23;
       --line-strong: #47392e;
+      --hint: #6d6058;
     }
   }
   :root[data-theme="dark"] {
@@ -56,6 +58,7 @@
     --accent-ink: #1a1512;
     --line: #332a23;
     --line-strong: #47392e;
+    --hint: #6d6058;
   }
 
   * { box-sizing: border-box; }
@@ -170,6 +173,13 @@
   .spec-row.limit .spec-key { color: var(--accent); }
   .spec-row.limit .spec-val { color: var(--ink-2); }
 
+  .spec-note {
+    margin: 12px 0 0;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    max-width: 44ch;
+  }
+
   /* ---- form ---- */
   .card {
     background: var(--band);
@@ -204,6 +214,10 @@
     border-radius: 2px;
     padding: 10px 11px;
     width: 100%;
+  }
+  input::placeholder {
+    color: var(--hint);
+    opacity: 1;
   }
   input:focus-visible {
     outline: 2px solid var(--accent);
@@ -322,7 +336,7 @@
 
   <div class="hero">
     <h1>Add a cap to your <em>CLO</em> scene.</h1>
-    <p class="lede">We manufacture headwear, and we build it as CLO assets — panel seams, buckram crowns, visor curvature, stitch and embroidery loft.</p>
+    <p class="lede">Your apparel lines live in CLO. Your caps are still a photo and a sample request.</p>
   </div>
 
   <div>
@@ -379,25 +393,26 @@
     </div>
     <div class="spec-row limit">
       <div class="spec-key">Still needs a sample</div>
-      <p class="spec-val">Garment wash, pigment dye, embroidery loft. We say so up front rather than render it and hope.</p>
+      <p class="spec-val">Garment wash, pigment dye, 3D puff height</p>
     </div>
+    <p class="spec-note">We'd rather tell you that than render it and hope.</p>
   </div>
 
   <form class="card" id="lead-form" novalidate>
     <h2>Get the 3D sampling overview</h2>
     <p class="sub">How we build a cap in CLO, style by style, and what comes back to you.</p>
     <div class="fields">
-      <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
-      <label><span>Company</span><input type="text" name="company" autocomplete="organization" required></label>
-      <label><span>Job title</span><input type="text" name="title" autocomplete="organization-title" required></label>
-      <label><span>Work email</span><input type="email" name="email" autocomplete="email" required></label>
+      <label><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Taylor Brooks" required></label>
+      <label><span>Company</span><input type="text" name="company" autocomplete="organization" placeholder="Your brand" required></label>
+      <label><span>Job title</span><input type="text" name="title" autocomplete="organization-title" placeholder="3D Apparel Designer" required></label>
+      <label><span>Work email</span><input type="email" name="email" autocomplete="email" placeholder="you@brand.com" required></label>
     </div>
-    <button type="submit">Send me the deck</button>
+    <button type="submit">Send it to me</button>
     <p class="fineprint">We use this to send the overview and to follow up about your headwear program. Nothing else.</p>
   </form>
 
   <div class="card done" id="lead-done" hidden>
-    <h2>Deck is ready.</h2>
+    <h2>Here it is.</h2>
     <a class="dl" href="#" id="dl-link">
       <span>
         <span class="dl-name">DADA Headwear · 3D Sampling Overview</span><br>
