@@ -335,10 +335,12 @@
     width: 100%;
     max-width: 750px;
     height: auto;
-    margin: 0 auto 26px;
+    margin: 0 auto;
     border: 1px solid var(--line);
     border-radius: 6px;
   }
+  /* .wrap의 세로 간격(34px)이 배너 바로 아래에서는 너무 넓다 */
+  .banner + .eyebrow { margin-top: -21px; }
 </style>
 
 <div class="wrap">
