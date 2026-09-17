@@ -135,7 +135,8 @@
     gap: 10px;
     align-items: center;
   }
-  .pane svg { width: 100%; height: auto; display: block; max-width: 190px; }
+  .pane svg,
+  .pane img { width: 100%; height: auto; display: block; max-width: 230px; }
   .pane figcaption {
     font-family: var(--mono);
     font-size: 10.5px;
@@ -332,59 +333,37 @@
   .banner {
     display: block;
     width: 100%;
-    max-width: 620px;
+    max-width: 750px;
     height: auto;
-    margin: -8px auto 18px;
+    margin: 0 auto 26px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
   }
 </style>
 
 <div class="wrap">
 
-  <img class="banner" src="trucker-side.webp" width="900" height="453"
-       alt="Blue and white trucker cap, side view, built in CLO">
+  <img class="banner" src="clo-summit-banner.png" width="750" height="150"
+       alt="CLO Summit New York 2026 &mdash; September 25, Convene">
 
   <p class="eyebrow"><b>CLO Summit New York</b> <span>Sep 25 &middot; Hall 1</span></p>
 
   <div class="hero">
     <h1>Come see a cap built in <em>CLO</em>.</h1>
-    <p class="lede">Most of the room knows 3D better than we do. What almost nobody has seen is a cap built in it.</p>
+    <p class="lede">Come and get our 3D sampling guide at the booth only.</p>
   </div>
 
 <div>
     <div class="pair">
       <figure class="pane">
-        <svg viewBox="0 0 200 132" role="img" aria-label="Side view of a six-panel cap, physical sample">
-          <path d="M22 96 Q100 130 178 96 L170 92 Q100 118 30 92 Z" fill="var(--ink-2)"></path>
-          <path d="M30 95 A70 70 0 0 1 170 95 Z" fill="var(--accent)"></path>
-          <path d="M100 25 V95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <path d="M66 32 Q73 62 69 95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <path d="M134 32 Q127 62 131 95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <circle cx="100" cy="26" r="5" fill="var(--ink-2)"></circle>
-        </svg>
-        <figcaption>Physical sample</figcaption>
+        <img src="trucker-front.webp" width="760" height="559"
+             alt="Blue and white trucker cap, front view, built in CLO">
+        <figcaption>CLO asset &middot; front</figcaption>
       </figure>
       <figure class="pane">
-        <svg viewBox="0 0 200 132" role="img" aria-label="Side view of the same cap as a 3D mesh">
-          <defs>
-            <clipPath id="dome">
-              <path d="M30 95 A70 70 0 0 1 170 95 Z"></path>
-            </clipPath>
-          </defs>
-          <g clip-path="url(#dome)" stroke="var(--accent)" stroke-width="0.7" opacity="0.5" fill="none">
-            <path d="M30 82 H170"></path><path d="M30 70 H170"></path><path d="M30 58 H170"></path>
-            <path d="M30 46 H170"></path><path d="M30 34 H170"></path>
-            <path d="M45 20 V100"></path><path d="M60 20 V100"></path><path d="M75 20 V100"></path>
-            <path d="M90 20 V100"></path><path d="M105 20 V100"></path><path d="M120 20 V100"></path>
-            <path d="M135 20 V100"></path><path d="M150 20 V100"></path>
-          </g>
-          <path d="M30 95 A70 70 0 0 1 170 95 Z" fill="none" stroke="var(--accent)" stroke-width="2"></path>
-          <path d="M22 96 Q100 130 178 96 L170 92 Q100 118 30 92 Z" fill="none" stroke="var(--accent)" stroke-width="2"></path>
-          <path d="M100 25 V95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <path d="M66 32 Q73 62 69 95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <path d="M134 32 Q127 62 131 95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <circle cx="100" cy="26" r="5" fill="none" stroke="var(--accent)" stroke-width="1.4"></circle>
-        </svg>
-        <figcaption>CLO asset</figcaption>
+        <img src="trucker-quarter.webp" width="760" height="488"
+             alt="Blue and white trucker cap, three-quarter view, built in CLO">
+        <figcaption>CLO asset &middot; three-quarter</figcaption>
       </figure>
     </div>
   </div>
@@ -406,8 +385,7 @@
       <div class="spec-key">Ask us</div>
       <p class="spec-val">How far a cap block goes, what still needs a physical sample, and what a brand has to hand a vendor to get a file back</p>
     </div>
-    <p class="spec-note">Between workshops, come to Hall 1 and see a block up close.</p>
-    <p class="spec-note">Our 3D sampling guide goes out at the booth only.</p>
+    <p class="spec-note">Finished a session? Hall 1, and we&rsquo;ll open a cap live for you.</p>
   </div>
 
   <div class="about">
