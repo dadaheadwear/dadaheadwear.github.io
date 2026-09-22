@@ -152,9 +152,6 @@
   }
 
   /* ---- spec list ---- */
-  .art { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: center; }
-  .art img { width: 100%; height: auto; display: block; }
-  @media (max-width: 560px) { .art { grid-template-columns: 1fr; gap: 4px; } }
   .spec { display: flex; flex-direction: column; gap: 0; }
   .spec-row {
     display: grid;
@@ -341,19 +338,15 @@
     <h1>Add a cap to your <em>CLO</em> scene.</h1>
   </div>
 
-  <div class="art">
-    <img src="art/cap-3d-angle.webp" width="820" height="526" alt="Three-quarter view of a trucker cap built in CLO">
-    <img src="art/cap-3d-front.webp" width="820" height="603" alt="Front view of the same cap">
-  </div>
 
   <div class="card">
-    <h2>Get the 3D sampling overview</h2>
+    <h2>Get the headwear 3D sampling guidebook</h2>
     <!-- 폼은 Tally(pbggly)가 받는다. 제출은 Tally에 저장된다.
          완료 화면(다운로드 버튼)도 이 iframe 안에서 뜬다. -->
     <iframe
       data-tally-src="https://tally.so/embed/pbggly?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
-      loading="lazy" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0"
-      title="Get the 3D sampling overview"></iframe>
+      width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0"
+      title="Get the headwear 3D sampling guidebook"></iframe>
     <p class="fineprint">We use this to send the overview and to follow up about your headwear program. Nothing else.</p>
   </div>
 
