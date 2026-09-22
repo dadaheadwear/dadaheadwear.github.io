@@ -152,6 +152,9 @@
   }
 
   /* ---- spec list ---- */
+  .art { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: center; }
+  .art img { width: 100%; height: auto; display: block; }
+  @media (max-width: 560px) { .art { grid-template-columns: 1fr; gap: 4px; } }
   .spec { display: flex; flex-direction: column; gap: 0; }
   .spec-row {
     display: grid;
@@ -336,72 +339,16 @@
 
   <div class="hero">
     <h1>Add a cap to your <em>CLO</em> scene.</h1>
-    <p class="lede">Your apparel is in CLO. Your caps are not.</p>
   </div>
 
-  <div>
-    <div class="pair">
-      <figure class="pane">
-        <svg viewBox="0 0 200 132" role="img" aria-label="Side view of a six-panel cap, physical sample">
-          <path d="M22 96 Q100 130 178 96 L170 92 Q100 118 30 92 Z" fill="var(--ink-2)"></path>
-          <path d="M30 95 A70 70 0 0 1 170 95 Z" fill="var(--accent)"></path>
-          <path d="M100 25 V95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <path d="M66 32 Q73 62 69 95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <path d="M134 32 Q127 62 131 95" stroke="var(--ground)" stroke-width="1.5" fill="none" opacity="0.55"></path>
-          <circle cx="100" cy="26" r="5" fill="var(--ink-2)"></circle>
-        </svg>
-        <figcaption>Physical sample</figcaption>
-      </figure>
-      <figure class="pane">
-        <svg viewBox="0 0 200 132" role="img" aria-label="Side view of the same cap as a 3D mesh">
-          <defs>
-            <clipPath id="dome">
-              <path d="M30 95 A70 70 0 0 1 170 95 Z"></path>
-            </clipPath>
-          </defs>
-          <g clip-path="url(#dome)" stroke="var(--accent)" stroke-width="0.7" opacity="0.5" fill="none">
-            <path d="M30 82 H170"></path><path d="M30 70 H170"></path><path d="M30 58 H170"></path>
-            <path d="M30 46 H170"></path><path d="M30 34 H170"></path>
-            <path d="M45 20 V100"></path><path d="M60 20 V100"></path><path d="M75 20 V100"></path>
-            <path d="M90 20 V100"></path><path d="M105 20 V100"></path><path d="M120 20 V100"></path>
-            <path d="M135 20 V100"></path><path d="M150 20 V100"></path>
-          </g>
-          <path d="M30 95 A70 70 0 0 1 170 95 Z" fill="none" stroke="var(--accent)" stroke-width="2"></path>
-          <path d="M22 96 Q100 130 178 96 L170 92 Q100 118 30 92 Z" fill="none" stroke="var(--accent)" stroke-width="2"></path>
-          <path d="M100 25 V95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <path d="M66 32 Q73 62 69 95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <path d="M134 32 Q127 62 131 95" stroke="var(--accent)" stroke-width="1.4" fill="none"></path>
-          <circle cx="100" cy="26" r="5" fill="none" stroke="var(--accent)" stroke-width="1.4"></circle>
-        </svg>
-        <figcaption>CLO asset</figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <div class="spec">
-    <div class="spec-row">
-      <div class="spec-key">Shapes</div>
-      <p class="spec-val">5-panel · 6-panel · trucker · bucket · camp cap</p>
-    </div>
-    <div class="spec-row">
-      <div class="spec-key">Built in</div>
-      <p class="spec-val">CLO 2026, with fabric and colorway sets built per style</p>
-    </div>
-    <div class="spec-row">
-      <div class="spec-key">Carries over</div>
-      <p class="spec-val">Panel seams, crown structure, visor curve, sweatband, closure, embroidery placement</p>
-    </div>
-    <div class="spec-row limit">
-      <div class="spec-key">Still needs a sample</div>
-      <p class="spec-val">Garment wash, pigment dye, 3D puff height</p>
-    </div>
-    <p class="spec-note">We'd rather tell you that than render it and hope.</p>
+  <div class="art">
+    <img src="art/cap-3d-angle.webp" width="820" height="526" alt="Three-quarter view of a trucker cap built in CLO">
+    <img src="art/cap-3d-front.webp" width="820" height="603" alt="Front view of the same cap">
   </div>
 
   <div class="card">
     <h2>Get the 3D sampling overview</h2>
-    <p class="sub">How we build a cap in CLO, style by style, and what comes back to you.</p>
-    <!-- 폼은 Tally(RGO6Dp)가 받는다. 제출은 Tally에 저장되고 구글시트로 이어진다.
+    <!-- 폼은 Tally(pbggly)가 받는다. 제출은 Tally에 저장된다.
          완료 화면(다운로드 버튼)도 이 iframe 안에서 뜬다. -->
     <iframe
       data-tally-src="https://tally.so/embed/pbggly?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
